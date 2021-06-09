@@ -25,7 +25,6 @@ article {
   padding: 0;
 }
 body {
-  color: #555;
   font-size: 14px;
   font-family: "NanumSquare", "ë‚˜ëˆ”ê³ ë”•", "Nanum Gothic",
     "Apple SD Gothic Neo", Arial, sans-serif;
@@ -128,21 +127,25 @@ mark.mint {
   color: white;
 }
 
+/* 색상 */
+
 :root {
   --main-font-color: #202020;
   --main-color: #0186e4;
   --point-color: #ff5d35;
 }
 
+/* 구분선 */
+
 hr {
   color: var(--main-color);
 }
 
 /* 헤더A */
+
 header {
   position: relative;
   width: 100%;
-  background-color: rgb(255, 255, 255);
 }
 
 /* 헤더A: 사이트 이름 */
@@ -154,18 +157,6 @@ header .container {
 .container-small .logo {
   width: 190px;
   height: 40px;
-  background-color: none;
-}
-.container-small span {
-  display: inline-block;
-  line-height: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: var(--main-color);
-  background-color: none;
-  /* font-family: "Montserrat", sans-serif; */
-  font-size: 24px;
-  text-decoration: none;
 }
 
 /* 헤더B: 네비게이션 메뉴 */
@@ -213,7 +204,6 @@ header .container-small {
   outline: none;
   background: none;
   font-size: 30px;
-  opacity: 0.5;
   cursor: pointer;
 }
 
@@ -227,47 +217,23 @@ header .container-small {
   margin-bottom: 7px;
 }
 
-/* 상단 네비바 */
+/* 상단 메뉴바 */
 .header_menu_wrap {
   display: block;
   width: 100%;
 }
 
-.btn_family_site_wrap {
-  display: block;
-  width: 100%;
-  height: 36px;
-  line-height: 36px;
-  /* color: #959595; */
-  font-size: 16px;
-  font-weight: bold;
-  border-top: 1px solid #d8d8d8;
-  /* background-color: #f9f9f9; */
-  overflow: hidden;
-}
-.btn_family_site_wrap strong {
-  float: left;
-  padding-left: 8px;
-}
-.btn_family_site_wrap span {
-  float: right;
-  color: #bdbdbd;
-  font-size: 12px;
-  padding-right: 8px;
-}
-
-/* 상단 메뉴바 */
 .header_menu_navigation {
   display: block;
 }
+
 .header_menu_navigation ul {
   width: 100%;
   height: 62px;
-  border-top: 0px solid var(--main-color);
-  border-bottom: 0px solid var(--main-color);
   background-color: var(--main-color);
   overflow: hidden;
 }
+
 .header_menu_navigation ul li {
   float: left;
   width: calc(25% - 1px);
@@ -295,7 +261,7 @@ header .container-small {
 }
 
 .header_menu_navigation ul li#btnTravelList div {
-  margin-top: 4px;
+  margin-top: 2px;
   display: block;
   color: #fff;
   font-family: "NanumSquare";
@@ -316,6 +282,7 @@ header .container-small {
   font-size: 1.4em;
   text-align: center;
 }
+
 .header_menu_navigation ul li a {
   display: block;
   color: #fff;
@@ -463,7 +430,6 @@ header .container-small {
 .one {
   width: 80%;
   margin-bottom: 20px;
-  background-color: var(--main-color);
 }
 
 /* WHY YGC */
@@ -566,71 +532,6 @@ header .container-small {
   font-size: 1.8rem;
   font-weight: bold;
   /* font-family: "Noto Sans KR", sans-serif; */
-  /* text-transform: uppercase; */
-}
-
-/* SWIPE(TOUCH SLIDE) */
-.finSwipe {
-  display: block;
-  overflow: hidden;
-}
-.finSwipe.main {
-  padding: 0px 0px 0 0px;
-}
-.swipe-wrap {
-  position: relative;
-  overflow: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-}
-.swipe-wrap.consult {
-  border-top: 1px solid #5a5a5a;
-  border-left: 1px solid #5a5a5a;
-  border-right: 1px solid #555;
-  border-bottom: 1px solid #555;
-  background: #606060;
-}
-.swipe-wrap > li {
-  position: relative;
-  float: left;
-  left: -9999px;
-  width: 100%;
-  margin-right: -100%;
-}
-.swipe-wrap.consult > li {
-  line-height: 1.75em;
-  padding-bottom: 8px;
-}
-.swipe-wrap > li:first-child {
-  left: 0;
-}
-.swipe-wrap > li a.main_slider {
-}
-.swipe-wrap > li a.main_slider img {
-  width: 100%;
-  border: 0px solid #ababab;
-}
-.swipe-wrap.consult > li h5 {
-  color: #fff;
-  font-size: 14px;
-  padding: 5px 8px;
-}
-.swipe-wrap.consult > li p {
-  color: #fff;
-  font-size: 12px;
-  padding: 0 8px;
-}
-.fin_swipe_circle_pager {
-  display: block;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-}
-.fin_swipe_circle_pager span {
-  color: #fff;
-  font-size: 10px;
-}
-.fin_swipe_circle_pager span.fa-circle {
-  color: #0186e4;
 }
 
 /* LIST 슬라이드 내부 내용 */
@@ -638,6 +539,7 @@ header .container-small {
   display: block;
 }
 .travel_list_list_relative {
+  /* comment */
   display: block;
   margin: 0 0 5px 0;
   border-bottom: 1px solid #ddd;
@@ -678,34 +580,7 @@ header .container-small {
   padding: 0 0 3px 0;
   margin-left: 5px;
 }
-.travel_list_goods_relative p.subject2 {
-  line-height: 1.3em;
-  color: #333;
-  font-family: "ë‚˜ëˆ”ê³ ë”•";
-  font-size: 1em;
-  word-break: normal;
-  padding: 0 0 10px 0;
-  margin-left: 5px;
-}
-.travel_list_goods_relative p.min_price {
-  text-align: right;
-  color: #acacac;
-  font-family: "NanumSquare";
-  font-size: 13px;
-}
-.travel_list_goods_relative p.price {
-  text-align: right;
-  color: #333;
-  font-family: "NanumSquare";
-  font-size: 0.9em;
-  font-weight: bold;
-  margin-right: 10px;
-}
-.travel_list_goods_relative p.price span {
-  color: var(--main-color);
-  font-size: 1em;
-  font-weight: bold;
-}
+
 .travel_list_point_relative {
   line-height: 1.5em;
   font-size: 10px;
@@ -723,21 +598,6 @@ header .container-small {
   color: #666;
   font-size: 10px;
   padding: 3px 0;
-}
-.travel_list_discount_relative {
-  display: block;
-  line-height: 1.5em;
-  color: #999;
-  font-size: 11px;
-  padding: 5px 10px;
-  border-top: 1px solid #f0f0f0;
-}
-.travel_list_discount_relative p {
-  display: block;
-}
-.travel_list_discount_relative p i {
-  width: 18px;
-  text-align: center;
 }
 
 /* 슬라이드 조절 */
@@ -785,32 +645,11 @@ header .container-small {
 .whatsnew-list ul {
   padding: 0;
 }
-.whatsnew-deal .whatsnew-info {
-  position: absolute;
-  text-align: left;
-  top: 83px;
-  right: 0;
-  background-color: none;
-  padding: 13px 14px;
-}
-.whatsnew-info .main-title {
-  font-weight: normal;
-  font-size: 19px;
-  color: #fff;
-}
-.whatsnew-info .sub-title {
-  font-weight: bold;
-  font-size: 19px;
-  color: #fff;
-}
-.whatsnew-info .price {
-  font-weight: bold;
-  font-size: 14px;
-  color: #ff0101;
-}
+
 .whatsnew-img img {
   width: 100%;
 }
+
 /* 아래 동그라미, 전체보기 배경 */
 #background {
   position: absolute;
@@ -820,23 +659,7 @@ header .container-small {
   height: 35px;
   background-color: none;
 }
-#prev-button {
-  background: url(//img1a.coupangcdn.com/image/mobileweb/whatsnew.png) no-repeat
-    0;
-  position: absolute;
-  left: 9px;
-  bottom: 9px;
-  width: 14px !important;
-  height: 24px;
-}
-#next-button {
-  background: url(//img1a.coupangcdn.com/image/mobileweb/whatsnew.png) no-repeat -14px;
-  position: absolute;
-  right: 9px;
-  bottom: 9px;
-  width: 14px !important;
-  height: 24px;
-}
+
 #tabs {
   position: absolute;
   bottom: 10px;
@@ -861,42 +684,6 @@ header .container-small {
   border-radius: 4px;
   display: inline-block;
   margin: 0 3px;
-}
-.whatsnew-all {
-  display: block;
-  position: absolute;
-  right: 7px;
-  bottom: 8px;
-  background: url(//img1a.coupangcdn.com/image/mobileweb/whatsnew_all_btn.png)
-    no-repeat;
-  background-size: 60px auto;
-  width: 60px !important;
-  height: 20px;
-  overflow: hidden;
-  text-indent: -99999em;
-}
-#whatsnew-all-title {
-  height: 44px;
-  background-color: none;
-  display: none;
-}
-#whatsnew-all-title h3 {
-  padding-top: 11px;
-  color: #fff;
-  text-align: center;
-}
-#whatsnew-all-title a {
-  display: inline-block;
-  position: absolute;
-  top: 14px;
-  right: 10px;
-  background: url(//img1a.coupangcdn.com/image/mobileweb/whatsnew_all_btn.png) 0 -48px
-    no-repeat;
-  background-size: 54px auto;
-  width: 32px;
-  height: 32px;
-  overflow: hidden;
-  text-indent: -9999em;
 }
 
 /* FOOTER */

@@ -4,9 +4,7 @@
 <head>
     <title>YGC KOREA TRAVEL</title>
     <meta charset="UTF-8" />
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <meta name="robots" content="ALL" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css?ver=6/3/2021" /> 추후 구글 폰트 지정-->
     <meta name="title" property="og:title" content="YGC KOREA TRAVEL">
     <meta name="images" property="og:image" content="images/아이콘/로고합체.png">
@@ -14,21 +12,14 @@
     <meta name="type" property="og:type" content="article">
     <link rel="stylesheet" href="common/swiper-master/css/swiper.min.css" />
     <link rel="stylesheet" href="common/css/common.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous">
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="common/swiper-master/js/swiper.min.js"></script>
-    <script>
-        $(function () {
-            $(".headC").click(function () {
-                $(".headB").slideToggle();
-            });
-        });
-    </script>
+    <script src="js/finsoft.common.js"></script>
+    <script src='js/slide.js' type="text/javascript"></script>
 </head>
 
 <body id="main">
-
 
 <div class="header_wrap">
     <header>
@@ -52,7 +43,6 @@
     </header>
 </div>
 
-
 <nav class="header_menu_wrap">
     <div class="header_menu_navigation">
         <ul>
@@ -65,7 +55,6 @@
                     <img src="images/Icon/Custom Tour/Custom_Tour.png" alt="">
                     <div class="btnTravelboard_div">Custom Tour</div>
                 </a>
-
             </li>
             <li>
                 <a href="index.html">
@@ -75,7 +64,7 @@
             </li>
             <li>
                 <a href="index.html">
-                    <img src="images/Icon/Question/question-white.png" alt="">
+                    <img src="images/Icon/ygc story/ygc story 50.png" alt="">
                     <div class="btnTravelboard_div">YGC Story</div>
                 </a>
             </li>
@@ -107,89 +96,61 @@
     </div>
 </nav>
 
-
-    <div id="coupangWrap">
-
-        <div id="wrap">
-
-
-            <div id="goodsList" data-plp-type="home">
-
-                <section id="whatsnew-section" class="isFlicking">
-                    <div id="whatsnew-all-title">
-                        <h3>전체보기</h3>
-                        <a href="https://m.coupang.com/nm" id="whatsnew-all-close">닫기</a>
+<section id="whatsnew-section" class="isFlicking">
+    <div id="whatsnewList" class="whatsnew-list">
+        <ul id="whatsnew-section-list">
+            <li>
+                <a href="index.html"
+                    class="whatsnew-deal">
+                    <div class="whatnew-deal-unit">
+                        <span class="whatsnew-img">
+                            <img src="images/Banner/2022_spring_tour.png" alt="2022_spring_tour">
+                        </span>
                     </div>
-                    <div id="whatsnewList" class="whatsnew-list">
-                        <ul id="whatsnew-section-list">
-
-                            <li>
-                                <a href="index.html"
-                                    class="whatsnew-deal">
-
-                                    <div class="whatnew-deal-unit">
-                                        <span class="whatsnew-img">
-                                            <img src="images/Banner/2022_spring_tour.png" alt="2022_spring_tour">
-                                        </span>
-                                    </div>
-                                </a>
-                                <div id="background"></div>
-                            </li>
-
-                            <li>
-                                <a href="index.html"
-                                    class="whatsnew-deal">
-
-                                    <div class="whatsnew-deal-unit">
-                                        <span class="whatsnew-img">
-                                            <img src="images/Banner/safe_travel_with_YGC.png" alt="safe_travel_with_YGC">
-                                        </span>
-                                    </div>
-                                </a>
-                                <div id="background"></div>
-                            </li>
-
-                            <li>
-                                <a href="index.html" class="whatsnew-deal">
-                            
-                                    <div class="whatsnew-deal-unit">
-                                        <span class="whatsnew-img">
-                                            <img src="images/Banner/2022_spring_tour.png" alt="">
-                                        </span>
-                                    </div>
-                                </a>
-                                <div id="background"></div>
-                            </li>
-
-                            <li>
-                                <a href="index.html" class="whatsnew-deal">
-                            
-                                    <div class="whatsnew-deal-unit">
-                                        <span class="whatsnew-img">
-                                            <img src="images/Banner/safe_travel_with_YGC.png" alt="">
-                                        </span>
-                                    </div>
-                                </a>
-                                <div id="background"></div>
-                            </li>
-
-                        </ul>
-                        <ol id="tabs"></ol>
+                </a>
+                <div id="background"></div>
+            </li>
+            <li>
+                <a href="index.html"
+                    class="whatsnew-deal">
+                    <div class="whatsnew-deal-unit">
+                        <span class="whatsnew-img">
+                            <img src="images/Banner/safe_travel_with_YGC.png" alt="safe_travel_with_YGC">
+                        </span>
                     </div>
-
-                </section>
-
-
-        </nav>
-
+                </a>
+                <div id="background"></div>
+            </li>
+            <li>
+                <a href="index.html" class="whatsnew-deal">
+                    <div class="whatsnew-deal-unit">
+                        <span class="whatsnew-img">
+                            <img src="images/Banner/2022_spring_tour.png" alt="">
+                        </span>
+                    </div>
+                </a>
+                <div id="background"></div>
+            </li>
+            <li>
+                <a href="index.html" class="whatsnew-deal">
+                    <div class="whatsnew-deal-unit">
+                        <span class="whatsnew-img">
+                            <img src="images/Banner/safe_travel_with_YGC.png" alt="">
+                        </span>
+                    </div>
+                </a>
+                <div id="background"></div>
+            </li>
+        </ul>
+        <ol id="tabs"></ol>
     </div>
-
+</section>
 
 <!-- TOUR INQUIRY -->
 <section class="TourInquiry">
-    <a href="index.html" class="container">
+    <a href="pages/introduce.html" class="container">
         <div class="wtpimginquiry">
-            <img src="images/아이콘/whatsapp.png" alt="">
+            <img src="images/Icon/SNS/whatsapp.png" alt="">
         </div>
 
         <div class="wtpinquirybox">
@@ -208,8 +169,7 @@
         <h2>WHY YGC TRAVEL?</h2>
     </div>
     <div class="container_p">
-        <p>All trips are tailored to families, couples, and <mark class="mint">small groups with elderly or
-                children</mark> who want safe travel with <mark class="mint">individual vehicles and guides.</mark> Make
+        <p>Our all trips are tailored to families, couples, and <mark class="mint">small groups with elderly or children</mark> who want safe travel with <mark class="mint">individual vehicles and guides.</mark> Make
             a great trip with YGC that puts customer satisfaction first!</p>
     </div>
 </div>
@@ -218,9 +178,8 @@
 <section class="point_Bar_Wrap">
     <div class="container">
         <div class="wtpimginquiry">
-            <img src="images/아이콘/no money.JPG" alt="">
+            <img src="images/Icon/No money/no money.JPG" alt="">
         </div>
-
         <div class="wtpinquirybox">
             <div class="wtpinquiry">No Hidden Cost</div>
             <div class="wtpinquirysub">Our quotation does not offer any additional amounts or option tours not
@@ -229,7 +188,7 @@
     </div>
     <div class="container">
         <div class="wtpimginquiry">
-            <img src="images/아이콘/no money.JPG" alt="">
+            <img src="images/Icon/No money/no money.JPG" alt="">
         </div>
 
         <div class="wtpinquirybox">
@@ -239,7 +198,7 @@
     </div>
     <div class="container">
         <div class="wtpimginquiry">
-            <img src="images/아이콘/no money.JPG" alt="">
+            <img src="images/Icon/No money/no money.JPG" alt="">
         </div>
 
         <div class="wtpinquirybox">
@@ -250,10 +209,8 @@
     </div>
 </section>
 
-
 <!-- 구분선2 -->
 <hr class="two">
-
 
 <!-- Review -->
 <div class="content">
@@ -271,7 +228,7 @@
                                 <div class="travel_list_goods_relative">
                                     <p class="schedule">Nami Islan/Namsan Tower/Gyeongbok Palace</p>
                                     <p class="subject">
-                                        <strong>BEST 8days Tour 
+                                        <strong>4 days Tour with tour guide Mr.Stephan
                                             <BR>
                                             <font color=#ff5d35>Singaporean actress MASTURA AHMAD's family
                                             </br>
@@ -284,48 +241,31 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="swiper-slide">
-                    <a href="/EUR/travel/view/?cate=002009&c=245672">
-                        <div class="travel_list_list_relative" link="/EUR/travel/view/?cate=&c=14352">
-                            <img src="images/Review Photo/YGC REVIEW (1).JPG" alt="베이직 아이슬란드 7일  &nbsp;아이슬란드 필수투어 포함" />
+                    <a href="/EUR/travel/view/?cate=002008&c=246194">
+                        <div class="travel_list_list_relative" link="/EUR/travel/view/?cate=&c=14874">
+                            <img src="images/Review Photo/[크기변환]YGC REVIEW (1).JPG" alt="YGC TRAVEL REVIEW" />
                             <div class="travel_list_content_relative">
                                 <div class="travel_list_goods_relative">
-                                    <p class="schedule">골든서클/남부해안+요쿨살론/스나이펠스네스/블루라군</p>
-                                    <p class="subject"><strong>베이직 <b>아이슬란드 7일</b> <br>
-                                            <font color=#ff5d35>아이슬란드 필수투어 포함</font>
-                                        </strong></p>
+                                    <p class="schedule">Nami Islan/Namsan Tower/Gyeongbok Palace</p>
+                                    <p class="subject">
+                                        <strong>BEST 8days Tour
+                                            <BR>
+                                            <font color=#ff5d35>Singaporean actress MASTURA AHMAD's family
+                                                </br>
+                                            </font>
+                                        </strong>
+                                    </p>
                                 </div>
-                                <p class="travel_list_point_relative"><strong>POINT</strong><span>&nbsp;&nbsp;추천투어 4일
-                                        포함, 공항↔호텔 왕복 공항버스티켓</span></p>
+                                <p class="travel_list_point_relative"><strong>Comment</strong><span>&nbsp;&nbsp;I will
+                                        definitely recommend YGC...</span></p>
                             </div>
                         </div>
                     </a>
                 </div>
-
-
-
-
             </div>
         </div>
     </section>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 'auto',
-            spaceBetween: 10,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
-
 </div>
 
 
@@ -333,15 +273,13 @@
     <ul class="footer_nav_wrap">
         <li><a href="index.html">HOME</a></li>
         <li><a href="index.html">YGC Story</a></li>
-        <li><a href="http://www.ygckoreatravel.co.kr/">FAQ</a></li>
+        <li><a href="index.html">FAQ</a></li>
         <li><a href="index.html">Policy</a></li>
     </ul>
-
     <div class="footer_copy_wrap">
         <h2 class="mb10">
             <img src="images/Icon/Logo/logo_test.png" alt="YGC KOREA TRAVEL" width="170px">
         </h2>
-
         <p>
             <strong>YGC KOREA TRAVEL Co., Ltd</strong>
             <br>
@@ -356,165 +294,102 @@
         </p>
         <p>Company registration number: 193-81-01407</p>
     </div>
-
 </footer>
 
-            <script src="js/finsoft.swipe.js"></script>
-            <script src="js/finsoft.common.js"></script>
-            <script src='require.min.js' type="text/javascript"></script>
-            <script src='js/slide.js' type="text/javascript"></script>
-
-
-    <script type="text/javascript">
-        "use strict";
-        var $document = $(document);
-        var $window = $(window);
-        var exhibitionScroll;
-        var iscroll;
-        var actArrw = function () {
-            $('#scroller-left,#scroller-right').addClass('active');
-            -3 < iscroll.x ? $("#scroller-left").removeClass("active")
-                : iscroll.x === iscroll.maxScrollX &&
-                $("#scroller-right").removeClass("active");
-        }
-
-        $document.ready(function () {
-
-            // What's New
-            if ($('#whatsnew-section').hasClass('isFlicking')) {
-                $("#whatsnewList").touchSlider({
-                    namespace: "touchslider",
-                    autoplay: {
-                        enable: true,
-                        pauseHover: true,
-                        addHoverTarget: '',
-                        interval: 3000
-                    },
-                    flexible: true,
-                    controls: false,
-                    paging: false,
-                    initComplete: function (e) {
-                        $('#whatsnewList img').load(function () { $window.trigger('resizeImage') });
-                        var count = e._len;
-                        $('#tabs').html('');
-                        for (var i = 0; i < count; i++) {
-                            var el = $('<li class="tab"><a></a></li>');
-                            el.attr('index', i);
-                            $('#tabs').append(el);
-                        }
-                    },
-                    counter: function (e) {
-                        $('#tabs a').removeClass('active');
-                        $('#tabs a').filter(function (i) { return i == e.current - 1 }).addClass('active');
-                    },
-                    custom: function () {
-                        this.stopAnimation();
-                    },
-                    onTouchEnd: function () {
-
-                    },
-
-                    startAnimation: function (interval_) {
-                        var interval = interval_ || 5000;
-
-                        this._timer = setInterval(function () {
-                            $("#whatsnewList").get(0).animate(-1, true);
-                        }, interval);
-                    },
-
-                    stopAnimation: function () {
-                        if (this._timer) {
-                            clearInterval(this._timer);
-                            delete this._timer;
-                        }
-                    }
-                });
-
-                $window.bind({
-                    resizeImage: function () {
-                        $("#whatsnewList").height($('.whatsnew-deal-unit').outerHeight(true));
-                        $window.trigger('floatingTitle');
-                    },
-                    load: function () {
-                        $("#whatsnewList").height($('.whatsnew-deal-unit').outerHeight(true));
-                    }
-                });
-            };
-
-            var coupangWrap = $("#coupangWrap"),
-                sectionTitle = $("#whatsnew-all-title"),
-                sectionAListLayer = $('#whatsNewAllListLayer');
-
-            $("#whatsnewAll").on("click", function (e) {
-                e.preventDefault();
-
-                if ($('#whatsNewAllListLayer').html().length <= 0) {
-                    sectionAListLayer.html($("#whatsnew-section-list").clone());
-                    sectionAListLayer.css("height", "auto");
-                    sectionAListLayer.find('#whatsnew-section-list').css({ "width": "100%" });
-                    sectionAListLayer.find('#whatsnew-section-list li').css({ "position": "static", "float": "initial", "width": "100%" });
-
-                    sectionTitle.appendTo(coupangWrap);
-                    sectionAListLayer.appendTo(coupangWrap);
-                } else {
-                    sectionTitle.show();
-                    sectionAListLayer.show();
-                }
-
-                coupangWrap.addClass("showWhatsnew");
-                sectionAListLayer.show();
-            });
-
-            $("#whatsnew-all-close").on("click", function (e) {
-                e.preventDefault();
-
-                coupangWrap.removeClass("showWhatsnew");
-                $(window).scrollTop(0);
-
-                sectionTitle.hide();
-                sectionAListLayer.hide();
-            });
-
+<script>
+    $(function () {
+        $(".headC").click(function () {
+            $(".headB").slideToggle();
         });
+    });
+</script>
 
-        /* v3. script */
-        if ($('#topMenu').size() > 0 && $('#scroller').size() > 0) {
-            var totalWidth = 0;
-            var lists = $('#scroller li');
+<script type="text/javascript">
+    "use strict";
+    var $document = $(document);
+    var $window = $(window);
+    var exhibitionScroll;
+    var iscroll;
+    var actArrw = function () {
+        $('#scroller-left,#scroller-right').addClass('active');
+        -3 < iscroll.x ? $("#scroller-left").removeClass("active")
+            : iscroll.x === iscroll.maxScrollX &&
+            $("#scroller-right").removeClass("active");
+    }
+    $document.ready(function () {
+        if ($('#whatsnew-section').hasClass('isFlicking')) {
+            $("#whatsnewList").touchSlider({
+                namespace: "touchslider",
+                autoplay: {
+                    enable: true,
+                    pauseHover: true,
+                    addHoverTarget: '',
+                    interval: 3000
+                },
+                flexible: true,
+                controls: false,
+                paging: false,
+                initComplete: function (e) {
+                    $('#whatsnewList img').load(function () { $window.trigger('resizeImage') });
+                    var count = e._len;
+                    $('#tabs').html('');
+                    for (var i = 0; i < count; i++) {
+                        var el = $('<li class="tab"><a></a></li>');
+                        el.attr('index', i);
+                        $('#tabs').append(el);
+                    }
+                },
+                counter: function (e) {
+                    $('#tabs a').removeClass('active');
+                    $('#tabs a').filter(function (i) { return i == e.current - 1 }).addClass('active');
+                },
+                custom: function () {
+                    this.stopAnimation();
+                },
+                onTouchEnd: function () {
+                },
+                startAnimation: function (interval_) {
+                    var interval = interval_ || 5000;
 
-            lists.each(function (index) {
-                totalWidth += $(this).width();
-            });
-            $('#scroller').width(totalWidth + lists.length);
-
-            var scrollOption = {
-                snap: 'li',
-                scrollX: true,
-                scrollY: false,
-                eventPassthrough: true
-            };
-            if (navigator.userAgent.match(/iphone/i) ||
-                navigator.userAgent.match(/ipad/i)) {
-                scrollOption.useTransform = false;
-            }
-            iscroll = new IScroll('#topMenu', scrollOption);
-            iscroll.on('scrollEnd', actArrw);
-            $('#scroller-left,#scroller-right').click(function () {
-                var newXPos;
-                if ($(this).hasClass("scroller-arr-left")) {
-                    newXPos = iscroll.currentPage.pageX - 3;
-                    newXPos = newXPos < 0 ? 0 : newXPos;
-                    iscroll.goToPage(newXPos, 0);
-                } else {
-                    newXPos = iscroll.currentPage.pageX + 3;
-                    newXPos = newXPos <= iscroll.pages.length ? newXPos : iscroll.pages.length;
-                    iscroll.goToPage(newXPos, 0);
+                    this._timer = setInterval(function () {
+                        $("#whatsnewList").get(0).animate(-1, true);
+                    }, interval);
+                },
+                stopAnimation: function () {
+                    if (this._timer) {
+                        clearInterval(this._timer);
+                        delete this._timer;
+                    }
                 }
             });
-        }
+            $window.bind({
+                resizeImage: function () {
+                    $("#whatsnewList").height($('.whatsnew-deal-unit').outerHeight(true));
+                    $window.trigger('floatingTitle');
+                },
+                load: function () {
+                    $("#whatsnewList").height($('.whatsnew-deal-unit').outerHeight(true));
+                }
+            });
+        };
+    });
+</script>
 
-    </script>
-    
+<!-- 케러셀 js -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
 </body>
-
 </html>
