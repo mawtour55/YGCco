@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+#whatsnew-section {
+  background-color: #fff;
+  min-height: 150px;
+}
+#whatsnew-section #tabs {
+  width: 100%;
+}
+.whatsnew-list {
+  position: relative;
+  overflow-x: hidden;
+}
+.whatsnew-list ul {
+  padding: 0;
+}
+.whatsnew-deal .whatsnew-info {
+  position: absolute;
+  text-align: left;
+  top: 83px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 13px 14px;
+}
+.whatsnew-info .main-title {
+  font-weight: normal;
+  font-size: 19px;
+  color: #fff;
+}
+.whatsnew-info .sub-title {
+  font-weight: bold;
+  font-size: 19px;
+  color: #fff;
+}
+.whatsnew-info .price {
+  font-weight: bold;
+  font-size: 14px;
+  color: #ff0101;
+}
+.whatsnew-img img {
+  width: 100%;
+}
+#background {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#prev-button {
+  background: url(//img1a.coupangcdn.com/image/mobileweb/whatsnew.png) no-repeat
+    0;
+  position: absolute;
+  left: 9px;
+  bottom: 9px;
+  width: 14px !important;
+  height: 24px;
+}
+#next-button {
+  background: url(//img1a.coupangcdn.com/image/mobileweb/whatsnew.png) no-repeat -14px;
+  position: absolute;
+  right: 9px;
+  bottom: 9px;
+  width: 14px !important;
+  height: 24px;
+}
+#tabs {
+  position: absolute;
+  bottom: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+#tabs .tab {
+  display: inline;
+}
+#tabs a {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 3px;
+}
+#tabs a.active {
+  background-color: white;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 3px;
+}
+.whatsnew-all {
+  display: block;
+  position: absolute;
+  right: 7px;
+  bottom: 8px;
+  background: url(//img1a.coupangcdn.com/image/mobileweb/whatsnew_all_btn.png)
+    no-repeat;
+  background-size: 60px auto;
+  width: 60px !important;
+  height: 20px;
+  overflow: hidden;
+  text-indent: -99999em;
+}
+#whatsnew-all-title {
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+#whatsnew-all-title h3 {
+  padding-top: 11px;
+  color: #fff;
+  text-align: center;
+}
+#whatsnew-all-title a {
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  background: url(//img1a.coupangcdn.com/image/mobileweb/whatsnew_all_btn.png) 0 -48px
+    no-repeat;
+  background-size: 54px auto;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  text-indent: -9999em;
+}
