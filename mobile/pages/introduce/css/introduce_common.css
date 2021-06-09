@@ -439,7 +439,7 @@ header .container-small {
 
 .why_Wrap {
   width: 100%;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   color: var(--main-font-color);
 }
 
@@ -459,6 +459,16 @@ header .container-small {
   margin-right: auto;
   line-height: 1.3;
   font-size: 1rem;
+  text-align: justify;
+}
+
+.why_Wrap .container_p strong {
+  color: var(--main-color);
+}
+
+#ceo {
+  text-align: center;
+  font-weight: bold;
 }
 
 /* FOOTER */
