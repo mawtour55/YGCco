@@ -523,24 +523,41 @@ header .container-small {
 /* Review */
 .content {
   display: block;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   background: #f0f0f0;
 }
 .content > h2 {
-  display: block;
-  height: 30px;
   color: var(--main-color);
-  /* font-family: "NanumSquare"; */
   margin: 0 0 5px 0; /* 리뷰글씨 밑 회색줄 마진 */
   background: #ffffff;
   display: block;
   text-align: center;
-  height: 44px;
+  height: 35px;
   line-height: 13px;
   color: var(--main-color);
   font-size: 1.8rem;
   font-weight: bold;
-  /* font-family: "Noto Sans KR", sans-serif; */
+}
+
+/* Best itinerary by YGC */
+.content2 {
+  display: block;
+  margin-top: 25px;
+  padding-bottom: 5px;
+  background: #f0f0f0;
+}
+.content2 > h2 {
+  color: var(--main-color);
+  margin: 0 0 5px 0; /* 리뷰글씨 밑 회색줄 마진 */
+  background: #ffffff;
+  display: block;
+  text-align: center;
+  height: 35px;
+  line-height: 13px;
+  color: var(--main-color);
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-top: 15px;
 }
 
 /* LIST 슬라이드 내부 내용 */
