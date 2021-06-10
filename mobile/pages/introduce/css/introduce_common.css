@@ -229,7 +229,7 @@ header .container-small {
 
 .header_menu_navigation ul {
   width: 100%;
-  height: 62px;
+  height: 59px;
   background-color: var(--main-color);
   overflow: hidden;
   border-top: 0px solid var(--main-color);
@@ -255,7 +255,7 @@ header .container-small {
 
 .header_menu_navigation ul li#btnTravelList img {
   width: 28%;
-  height: 30px;
+  height: 28px;
   margin-top: 6px;
   line-height: 35px;
   font-size: 1.4em;
@@ -279,7 +279,7 @@ header .container-small {
 /* 하위 메뉴 없는 첫번째 상단 메뉴 */
 .header_menu_navigation ul li img {
   width: 28%;
-  height: 30px;
+  height: 28px;
   margin-top: 6px;
   line-height: 35px;
   font-size: 1.4em;
@@ -431,7 +431,7 @@ header .container-small {
 
 /* 구분선1 */
 .one {
-  width: 80%;
+  width: 85%;
   margin-bottom: 20px;
 }
 
@@ -454,7 +454,7 @@ header .container-small {
 }
 
 .why_Wrap .container_p {
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.3;

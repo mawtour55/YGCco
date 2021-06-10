@@ -429,287 +429,60 @@ header .container-small {
   color: white;
 }
 
+/* Tour review */
+
+.container_h2 {
+  margin-bottom: 16px;
+}
+
+.container_h2 h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--main-color);
+}
+
 /* 구분선1 */
 .one {
   width: 85%;
   margin-bottom: 20px;
 }
 
-/* WHY YGC */
-
-.why_Wrap {
-  width: 100%;
-  margin-bottom: 0px;
-  color: var(--main-font-color);
-}
-
-.why_Wrap .container_h2 {
-  margin-bottom: 16px;
-}
-
-.why_Wrap h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  color: var(--main-color);
-}
-
-.why_Wrap .container_p {
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.3;
-  font-size: 1rem;
-}
-
-/* 3단바 */
-.point_Bar_Wrap {
-  padding-top: 0px;
-  padding-bottom: 20px;
-  max-width: 100%;
-  text-align: center;
-}
-
-.point_Bar_Wrap .container {
-  display: inline-block;
-  /* background-color: #fd94a6; */
-  padding: 10px;
-  text-align: center;
-  border-radius: 1em;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 8px;
-  width: 85%;
-  text-decoration: none;
-}
-
-.point_Bar_Wrap .wtpimginquiry {
-  float: left;
-}
-
-.point_Bar_Wrap img {
-  width: 50px;
-  margin-top: 30px;
-  margin-left: 5px;
-}
-
-.point_Bar_Wrap #wtpimginquiry_img1 {
-  width: 58px;
-  margin-top: 30px;
-  margin-left: 5px;
-}
-
-.point_Bar_Wrap .wtpinquirybox {
-  padding-left: 80px;
-  text-align: left;
-  color: var(--main-color);
-}
-
-.point_Bar_Wrap .wtpinquiry {
-  font-size: 1.5rem;
-}
-
-.point_Bar_Wrap .wtpinquirysub {
-  font-size: 1rem;
-  color: var(--main-font-color);
-}
-
-/* 구분선 */
 .two {
   width: 85%;
   margin-bottom: 30px;
-  margin-top: 0px;
+  margin-top: 30px;
 }
 
-/* Review */
-.content {
-  display: block;
-  padding-bottom: 2px;
-  background: #f0f0f0;
-}
-.content > h2 {
-  color: var(--main-color);
-  margin: 0 0 2px 0; /* 리뷰글씨 밑 회색줄 마진 */
-  background: #ffffff;
-  display: block;
-  text-align: center;
-  height: 35px;
-  line-height: 13px;
-  color: var(--main-color);
-  font-size: 1.8rem;
-  font-weight: bold;
-}
+/* WHY YGC */
 
-/* Best itinerary by YGC */
-.content2 {
-  display: block;
-  margin-top: 25px;
-  padding-bottom: 5px;
-  background: #f0f0f0;
-}
-.content2 > h2 {
-  color: var(--main-color);
-  margin: 0 0 2px 0; /* 리뷰글씨 밑 회색줄 마진 */
-  background: #ffffff;
-  display: block;
-  text-align: center;
-  height: 35px;
-  line-height: 13px;
-  color: var(--main-color);
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding-top: 15px;
-}
-
-/* LIST 슬라이드 내부 내용 */
-.travel_list_wrap_relative {
-  display: block;
-}
-.travel_list_list_relative {
-  /* comment */
-  display: block;
-  margin: 0 0 5px 0;
-  border-bottom: 1px solid #ddd;
-  background: #fff;
-  padding-top: 15px;
+.review_Wrap {
   width: 100%;
+  margin-bottom: 20px;
 }
-.travel_list_list_relative img {
-  display: block;
-  height: 170px;
+
+.review_container {
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid #f0f0f0;
-}
-.travel_list_content_relative {
-  display: block;
-  padding: 0 0 0 0;
-}
-.travel_list_goods_relative {
-  padding: 10px 0px 5px 0px;
-}
-.travel_list_goods_relative p.schedule {
-  line-height: 1.6em;
-  color: #999;
-  font-size: 10px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-break: normal;
-  overflow: hidden;
-  margin-left: 5px;
-}
-.travel_list_goods_relative p.subject {
-  line-height: 1.3em;
-  color: #333;
-  font-family: "NanumSquare";
-  font-size: 12px;
-  word-break: normal;
-  padding: 0 0 3px 0;
-  margin-left: 5px;
+  width: 85%;
 }
 
-.travel_list_point_relative {
-  line-height: 1.5em;
-  font-size: 10px;
-  padding-left: 10px;
-  background: #f8f8f8;
-  border-top: 1px solid #f0f0f0;
-}
-.travel_list_point_relative strong {
-  display: inline;
-  color: var(--main-color);
-  font-size: 11px;
-}
-.travel_list_poin_relativet span {
-  display: inline;
-  color: #666;
-  font-size: 10px;
-  padding: 3px 0;
-}
-
-/* 슬라이드 조절 */
-.swiper-container {
+.review_Wrap .review_img {
   width: 100%;
   height: 100%;
 }
-.swiper-slide {
-  text-align: left;
-  font-size: 18px;
-  background: #fff;
-  width: 80%;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-.swiper-slide:nth-child(2n) {
-  width: 80%;
-}
-.swiper-slide:nth-child(3n) {
-  width: 80%;
+
+.review_container_p h3,
+h5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-#whatsnew-section {
-  background-color: #fff;
-  min-height: 360px;
-}
-#whatsnew-section #tabs {
-  width: 100%;
-}
-.whatsnew-list {
-  position: relative;
-  overflow-x: hidden;
-}
-.whatsnew-list ul {
-  padding: 0;
-}
-
-.whatsnew-img img {
-  width: 100%;
-}
-
-/* 아래 동그라미, 전체보기 배경 */
-#background {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 35px;
-  background-color: none;
-}
-
-#tabs {
-  position: absolute;
-  bottom: 10px;
-  margin: 0 auto;
-  text-align: center;
-}
-#tabs .tab {
-  display: inline;
-}
-#tabs a {
-  background-color: none;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  display: inline-block;
-  margin: 0 3px;
-}
-#tabs a.active {
-  background-color: white;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  display: inline-block;
-  margin: 0 3px;
+.review_Wrap .review_container_p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 85%;
+  text-align: justify;
 }
 
 /* FOOTER */
