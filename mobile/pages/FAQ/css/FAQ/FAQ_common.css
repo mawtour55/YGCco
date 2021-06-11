@@ -132,6 +132,7 @@ mark.mint {
 :root {
   --main-font-color: #202020;
   --main-color: #0186e4;
+  --main-subcolor: #00b7e3;
   --point-color: #ff5d35;
 }
 
@@ -429,46 +430,55 @@ header .container-small {
   color: white;
 }
 
-/* 구분선1 */
-.one {
-  width: 85%;
-  margin-bottom: 20px;
-}
-
-/* WHY YGC */
-
-.why_Wrap {
-  width: 100%;
-  margin-bottom: 20px;
-  color: var(--main-font-color);
-}
-
-.why_Wrap .container_h2 {
+.container_h2 {
   margin-bottom: 16px;
 }
 
-.why_Wrap h2 {
+.container_h2 h2 {
   text-align: center;
   font-size: 1.8rem;
   color: var(--main-color);
 }
 
-.why_Wrap .container_p {
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.3;
-  font-size: 1rem;
-  text-align: justify;
+/* FAQ */
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border: solid 1px white;
 }
 
-.why_Wrap .container_p strong {
-  color: var(--main-color);
+.active,
+.accordion:hover {
+  background-color: #ccc;
 }
 
-#ceo {
-  text-align: center;
+.accordion:after {
+  content: "\002B";
+  color: #777;
   font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 /* FOOTER */
@@ -520,87 +530,4 @@ header .container-small {
 .footer_copy_wrap .mb10 {
   text-align: left;
   padding-bottom: 8px;
-}
-
-/* contact us */
-
-.container_h2 h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  color: var(--main-color);
-  margin-bottom: 10px;
-}
-
-/* form */
-
-.form-container {
-  padding: 5%;
-  background: #ffffff;
-  border: 9px solid #f2f2f2;
-  max-width: 90%;
-  margin: auto;
-}
-
-input,
-textarea {
-  width: 98%;
-}
-
-textarea {
-  height: 100px;
-}
-
-#name {
-  margin-top: 4px;
-  margin-bottom: 8px;
-}
-
-#email {
-  margin-top: 4px;
-  margin-bottom: 8px;
-}
-
-#message {
-  margin-top: 4px;
-  margin-bottom: 8px;
-  width: 98%;
-}
-
-.button-primary {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: white;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
-  cursor: pointer;
-  box-sizing: border-box;
-  width: 100%;
-  margin-top: 10px;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--main-color);
-}
-
-#success_message {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: 10px;
-  color: var(--point-color);
-  font-size: 1rem;
-}
-
-#success_message p {
-  margin-top: 5px;
 }
