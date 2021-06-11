@@ -10,12 +10,10 @@
     <meta name="images" property="og:image" content="images/아이콘/로고합체.png">
     <meta name="description" property="og:description" content="Talk to our tour specialist right now">
     <meta name="type" property="og:type" content="article">
-    <link rel="stylesheet" href="css/form_common.css" />
+    <link rel="stylesheet" href="css/itinerary5_common.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../../js/jquery-1.8.3.min.js"></script>
     <script src="../../js/finsoft.common.js"></script>
-    <script src="js/form.js"></script>
 </head>
 
 <body id="main">
@@ -50,7 +48,7 @@
                 <div class="btnTravelboard_div">Itinerary ▼</div>
             </li>
             <li>
-                <a href="form_index.html">
+                <a href="../form/form_index.html">
                     <img src="../../images/Icon/Custom Tour/Custom_Tour.png" alt="">
                     <div class="btnTravelboard_div">Custom Tour</div>
                 </a>
@@ -62,7 +60,7 @@
                 </a>
             </li>
             <li>
-                <a href="../introduce/introduce_index.html">
+                <a href="../../pages/introduce/introduce_index.html">
                     <img src="../../images/Icon/ygc story/ygc story 50.png" alt="">
                     <div class="btnTravelboard_div">YGC Story</div>
                 </a>
@@ -109,44 +107,64 @@
     </a>
 </section>
 
+<!-- 구분선1
+<hr class="one"> -->
 
-<div class="container_h2">
-    <h2>Custom Tour</h2>
+<!-- WHY YGC -->
+<div class="itinerary_wrap">
+    <div class="container_h2">
+        <h2>5 Days Best Itinerary</h2>
+    </div>
+
 </div>
 
-<!-- form -->
-<div class="container">
-    <div class="form-container">
+<div class="tab_wrap">
+    <div class="tab">
+        <div class="tebbox"><button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button></div>
+        <div class="tebbox"><button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button></div>
+        <div class="tebbox"><button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button></div>
+        <div class="tebbox"><button class="tablinks" onclick="openCity(event, 'Korea')">Korea</button></div>
+    </div>
 
-        <form method="post" id="reused_form">
-            <label id="title" for="name">Your Name:</label>
-            <input id="name" type="text" name="Name" required maxlength="50">
+    <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+    </div>
 
-            <label id="title" for="period">Tour period or date:</label>
-            <input id="name" type="text" name="period" required maxlength="50">
+    <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+    </div>
 
-            <label id="title" for="Number">Number of people:</label>
-            <input id="name" type="text" name="Number" required maxlength="50">
+    <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
 
-            <label id="title" for="Contact">Contact Number:</label>
-            <input id="name" type="text" name="Contact" required maxlength="50">
-
-            <label class="title" for="email">Email Address:</label>
-            <input id="email" type="email" name="Email" required maxlength="50">
-
-            <label class="title" for="message">Message:</label>
-            <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
-            <button class="button-primary" type="submit">Post</button>
-        </form>
-        <div id="success_message" style="display:none">
-            <h3>Submitted the form successfully!</h3>
-            <p> We will get back to you soon. </p>
-        </div>
-        <div id="error_message" style="width:100%; height:100%; display:none; ">
-            <h3>Error</h3> Sorry there was an error sending your form.
-        </div>
+    <div id="Korea" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is sdfsdfsdfsdfsdf.</p>
     </div>
 </div>
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
 
 <footer class="footer_wrap">
     <ul class="footer_nav_wrap">
