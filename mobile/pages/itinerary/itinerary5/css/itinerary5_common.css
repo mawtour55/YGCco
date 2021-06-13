@@ -61,8 +61,7 @@ select,
 label {
   vertical-align: middle;
 }
-ul,
-ol {
+ul {
   list-style: none;
 }
 address,
@@ -135,10 +134,8 @@ mark.mint {
   --point-color: #ff5d35;
 }
 
-/* 구분선 */
-
-hr {
-  color: var(--main-color);
+.strong_point {
+  color: var(--point-color);
 }
 
 /* 헤더A */
@@ -429,10 +426,46 @@ header .container-small {
   color: white;
 }
 
-/* 구분선1 */
-.one {
+/* 주요 관광지 */
+
+.attractions_wrap {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.attractions_wrap .attractions_box {
   width: 85%;
-  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.attractions_wrap .attractions_title {
+  color: var(--main-color);
+}
+
+.attractions_wrap .attractions_title_sub {
+  margin-top: 3px;
+}
+
+.price_wrap {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.price_wrap .price_box {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price_wrap .price_title {
+  color: var(--main-color);
+}
+
+.price_wrap .price_title_sub {
+  margin-top: 3px;
 }
 
 /* itinerary h2 */
@@ -453,22 +486,22 @@ header .container-small {
   color: var(--main-color);
 }
 
-/* itinerary */
+/* itinerary tab */
 
 /* Style the tab */
 
-.tab_wrap {
+.tabs_wrap {
   width: 100%;
 }
 
-.tab {
+.tabs {
   overflow: hidden;
   background-color: var(--main-color);
   width: 100%;
 }
 
 /* Style the buttons inside the tab */
-.tab button {
+.tabs button {
   background-color: inherit;
   border: none;
   outline: none;
@@ -484,12 +517,12 @@ header .container-small {
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tabs button:hover {
   background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.tabs button.active {
   background-color: #6cb5e9;
 }
 
@@ -501,7 +534,7 @@ header .container-small {
   border-top: none;
 }
 
-/* FAQ */
+/* Accordion */
 
 .accordion {
   background-color: #eee;
@@ -546,6 +579,154 @@ header .container-small {
   font-size: 1rem;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+/* Info + h3, p 설정도 있음 */
+
+.tabcontent {
+  text-align: justify;
+}
+
+.tabcontent .info_box {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tabcontent h3 {
+  color: var(--main-color);
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.tabcontent p {
+  margin-top: 5px;
+}
+
+.info_box ol {
+  padding-left: 15px;
+}
+
+.info_box li {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+/* Hotel */
+.tabcontent .hotel_box {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Policy */
+
+.tabcontent .policy_box {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.policy_box ol {
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.policy_box li {
+  font-size: 14px;
+  padding-top: 0px;
+}
+
+/* 슬라이드 조절 */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  background: #fff;
+  width: 80%;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide:nth-child(2n) {
+  width: 80%;
+}
+.swiper-slide:nth-child(3n) {
+  width: 80%;
+}
+
+#whatsnew-section {
+  background-color: #fff;
+  min-height: 100%;
+}
+#whatsnew-section #tabs {
+  width: 100%;
+}
+.whatsnew-list {
+  position: relative;
+  overflow-x: hidden;
+}
+.whatsnew-list ul {
+  padding: 0;
+}
+
+.whatsnew-img img {
+  width: 100%;
+}
+
+/* 아래 동그라미, 전체보기 배경 */
+#background {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 35px;
+  background-color: none;
+}
+
+#tabs {
+  position: absolute;
+  bottom: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+#tabs .tab {
+  display: inline;
+}
+#tabs a {
+  background-color: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 3px;
+}
+#tabs a.active {
+  background-color: white;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 3px;
 }
 
 /* FOOTER */

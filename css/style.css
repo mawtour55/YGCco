@@ -10,7 +10,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #f0d57f;
+  background: rgb(255, 255, 255);
 }
 
 /* 헤더 */
