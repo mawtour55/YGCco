@@ -127,6 +127,12 @@ mark.mint {
   color: white;
 }
 
+@media (max-width: 380px) {
+  h2 {
+    font-size: 1.5rem !important;
+  }
+}
+
 /* 색상 */
 
 :root {
@@ -255,7 +261,7 @@ header .container-small {
 }
 
 .header_menu_navigation ul li#btnTravelList img {
-  width: 28%;
+  width: 28px;
   height: 28px;
   margin-top: 6px;
   line-height: 35px;
@@ -279,7 +285,7 @@ header .container-small {
 
 /* 하위 메뉴 없는 첫번째 상단 메뉴 */
 .header_menu_navigation ul li img {
-  width: 28%;
+  width: 28px;
   height: 28px;
   margin-top: 6px;
   line-height: 35px;
@@ -400,7 +406,7 @@ header .container-small {
   border-radius: 1em;
   margin-left: 20px;
   margin-right: 20px;
-  width: 350px;
+  width: 80%;
   text-decoration: none;
 }
 
@@ -428,6 +434,15 @@ header .container-small {
 .TourInquiry .wtpinquirysub {
   font-size: 13px;
   color: white;
+}
+
+@media (max-width: 380px) {
+  .TourInquiry .wtpinquiry {
+    margin-top: 4px;
+  }
+  .TourInquiry .wtpinquirysub {
+    font-size: 10px;
+  }
 }
 
 .container_h2 {
