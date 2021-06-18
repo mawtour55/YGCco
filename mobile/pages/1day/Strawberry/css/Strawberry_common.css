@@ -435,6 +435,12 @@ header .container-small {
 }
 
 @media (max-width: 380px) {
+  .TourInquiry img {
+    margin-left: 18px;
+  }
+  .TourInquiry .wtpinquirybox {
+    padding-left: 85px;
+  }
   .TourInquiry .wtpinquiry {
     margin-top: 4px;
   }
