@@ -61,8 +61,7 @@ select,
 label {
   vertical-align: middle;
 }
-ul,
-ol {
+ul {
   list-style: none;
 }
 address,
@@ -141,10 +140,8 @@ mark.mint {
   --point-color: #ff5d35;
 }
 
-/* 구분선 */
-
-hr {
-  color: var(--main-color);
+.strong_point {
+  color: var(--point-color);
 }
 
 /* 헤더A */
@@ -452,194 +449,221 @@ header .container-small {
   }
 }
 
-/* 구분선1 */
-.one {
-  width: 85%;
-  margin-bottom: 20px;
+/* 주요 관광지 */
+
+.attractions_wrap {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-/* WHY YGC */
+.attractions_wrap .attractions_box {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-.why_Wrap {
+.attractions_wrap .attractions_title {
+  color: var(--main-color);
+}
+
+.attractions_wrap .attractions_title_sub {
+  margin-top: 3px;
+}
+
+.price_wrap {
   width: 100%;
-  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.price_wrap .price_box {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price_wrap .price_title {
+  color: var(--main-color);
+}
+
+.price_wrap .price_title_sub {
+  margin-top: 3px;
+}
+
+/* itinerary h2 */
+
+.itinerary_wrap {
+  width: 100%;
+  margin-bottom: 20px;
   color: var(--main-font-color);
 }
 
-.why_Wrap .container_h2 {
+.itinerary_wrap .container_h2 {
   margin-bottom: 16px;
 }
 
-.why_Wrap h2 {
+.itinerary_wrap h2 {
   text-align: center;
   font-size: 1.8rem;
   color: var(--main-color);
 }
 
-.why_Wrap .container_p {
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.3;
-  font-size: 1rem;
-}
+/* itinerary tab */
 
-/* 3단바 */
-.point_Bar_Wrap {
-  padding-top: 0px;
-  padding-bottom: 20px;
-  max-width: 100%;
-  text-align: center;
-}
+/* Style the tab */
 
-.point_Bar_Wrap .container {
-  display: inline-block;
-  /* background-color: #fd94a6; */
-  padding: 10px;
-  text-align: center;
-  border-radius: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 8px;
-  width: 85%;
-  text-decoration: none;
-}
-
-.point_Bar_Wrap .wtpimginquiry {
-  float: left;
-}
-
-.point_Bar_Wrap img {
-  width: 50px;
-  margin-top: 30px;
-  margin-left: 5px;
-}
-
-.point_Bar_Wrap #wtpimginquiry_img1 {
-  width: 58px;
-  margin-top: 30px;
-  margin-left: 5px;
-}
-
-.point_Bar_Wrap .wtpinquirybox {
-  padding-left: 80px;
-  text-align: left;
-  color: var(--main-color);
-}
-
-.point_Bar_Wrap .wtpinquiry {
-  font-size: 1.5rem;
-}
-
-.point_Bar_Wrap .wtpinquirysub {
-  font-size: 1rem;
-  color: var(--main-font-color);
-}
-
-/* 구분선 */
-.two {
-  width: 85%;
-  margin-bottom: 30px;
-  margin-top: 0px;
-}
-
-/* Review */
-.content {
-  display: block;
-  padding-bottom: 2px;
-  background: #f0f0f0;
-}
-.content > h2 {
-  color: var(--main-color);
-  margin: 0 0 2px 0; /* 리뷰글씨 밑 회색줄 마진 */
-  background: #ffffff;
-  display: block;
-  text-align: center;
-  height: 35px;
-  line-height: 13px;
-  color: var(--main-color);
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-/* Best itinerary by YGC */
-.content2 {
-  display: block;
-  margin-top: 25px;
-  padding-bottom: 2px;
-  background: #f0f0f0;
-}
-.content2 > h2 {
-  color: var(--main-color);
-  margin: 0 0 2px 0; /* 리뷰글씨 밑 회색줄 마진 */
-  background: #ffffff;
-  display: block;
-  text-align: center;
-  height: 35px;
-  line-height: 13px;
-  color: var(--main-color);
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding-top: 15px;
-}
-
-/* LIST 슬라이드 내부 내용 */
-.travel_list_wrap_relative {
-  display: block;
-}
-.travel_list_list_relative {
-  /* comment */
-  display: block;
-  margin: 0 0 0px 0;
-  background: #fff;
-  padding-top: 15px;
+.tabs_wrap {
   width: 100%;
 }
-.travel_list_list_relative img {
-  display: block;
-  height: 170px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #f0f0f0;
-}
-.travel_list_content_relative {
-  display: block;
-  padding: 0 0 0 0;
-}
-.travel_list_goods_relative {
-  padding: 10px 0px 5px 0px;
-}
-.travel_list_goods_relative p.schedule {
-  line-height: 1.6em;
-  color: #999;
-  font-size: 10px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-break: normal;
+
+.tabs {
   overflow: hidden;
-  margin-left: 5px;
+  background-color: var(--main-color);
+  width: 100%;
 }
-.travel_list_goods_relative p.subject {
-  line-height: 1.3em;
-  color: #333;
-  font-family: "NanumSquare";
-  font-size: 12px;
-  word-break: normal;
-  padding: 0 0 3px 0;
+
+/* Style the buttons inside the tab */
+.tabs button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* padding: 14px 16px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.3s;
+  font-size: 17px;
+  float: left;
+  width: 25%;
+  color: white;
+}
+
+/* Change background color of buttons on hover */
+.tabs button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tabs button.active {
+  background-color: #6cb5e9;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Accordion */
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  border: solid 1px white;
+  font-size: 1rem;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
   margin-left: 5px;
 }
 
-.travel_list_point_relative {
-  line-height: 1.5em;
-  font-size: 10px;
-  padding-left: 10px;
-  background: #f8f8f8;
-  border-top: 1px solid #f0f0f0;
+.active2:after {
+  content: "\2212";
 }
-.travel_list_point_relative strong {
-  display: inline;
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel P {
+  font-size: 1rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Info + h3, p 설정도 있음 */
+
+.tabcontent {
+  text-align: justify;
+}
+
+.tabcontent .info_box {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tabcontent h3 {
   color: var(--main-color);
-  font-size: 11px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.tabcontent p {
+  margin-top: 5px;
+}
+
+.info_box ol {
+  padding-left: 15px;
+}
+
+.info_box li {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+/* Hotel */
+.tabcontent .hotel_box {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Policy */
+
+.tabcontent .policy_box {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.policy_box ol {
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.policy_box li {
+  font-size: 14px;
+  padding-top: 0px;
 }
 
 /* 슬라이드 조절 */
@@ -651,7 +675,6 @@ header .container-small {
   text-align: left;
   font-size: 18px;
   background: #fff;
-  padding-left: 22px;
   width: 80%;
   /* Center slide text vertically */
   display: -webkit-box;
@@ -676,7 +699,7 @@ header .container-small {
 
 #whatsnew-section {
   background-color: #fff;
-  min-height: 300px;
+  min-height: 100%;
 }
 #whatsnew-section #tabs {
   width: 100%;
