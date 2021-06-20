@@ -61,7 +61,8 @@ select,
 label {
   vertical-align: middle;
 }
-ul {
+ul,
+ol {
   list-style: none;
 }
 address,
@@ -140,8 +141,10 @@ mark.mint {
   --point-color: #ff5d35;
 }
 
-.strong_point {
-  color: var(--point-color);
+/* 구분선 */
+
+hr {
+  color: var(--main-color);
 }
 
 /* 헤더A */
@@ -449,313 +452,86 @@ header .container-small {
   }
 }
 
-/* 주요 관광지 */
+/* Gallery */
 
-.attractions_wrap {
+.gallery_h3 h3 {
   width: 100%;
+}
+
+.gallery_h3 .gallery_box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  margin-bottom: 12px;
   margin-top: 10px;
+  text-align: justify;
+}
+
+mark.mint {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.review_box h3 {
   margin-bottom: 10px;
 }
 
-.attractions_wrap .attractions_box {
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* Tour review */
 
-.attractions_wrap .attractions_title {
-  color: var(--main-color);
-}
-
-.attractions_wrap .attractions_title_sub {
-  margin-top: 3px;
-}
-
-.price_wrap {
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.price_wrap .price_box {
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.price_wrap .price_title {
-  color: var(--main-color);
-}
-
-.price_wrap .price_title_sub {
-  margin-top: 3px;
-}
-
-/* itinerary h2 */
-
-.itinerary_wrap {
-  width: 100%;
-  margin-bottom: 20px;
-  color: var(--main-font-color);
-}
-
-.itinerary_wrap .container_h2 {
+.container_h2 {
   margin-bottom: 16px;
+  margin-top: 15px;
 }
 
-.itinerary_wrap h2 {
+.container_h2 h2 {
   text-align: center;
   font-size: 1.8rem;
   color: var(--main-color);
 }
 
-/* itinerary tab */
+/* 구분선1 */
+.one {
+  width: 85%;
+  margin-bottom: 20px;
+}
 
-/* Style the tab */
+.two {
+  width: 85%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
 
-.tabs_wrap {
+/* Customer Gallery */
+
+.review_Wrap {
   width: 100%;
+  margin-bottom: 20px;
 }
 
-.tabs {
-  overflow: hidden;
-  background-color: var(--main-color);
-  width: 100%;
-}
-
-/* Style the buttons inside the tab */
-.tabs button {
-  background-color: inherit;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  /* padding: 14px 16px; */
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: 0.3s;
-  font-size: 17px;
-  float: left;
-  width: 25%;
-  color: white;
-}
-
-/* Change background color of buttons on hover */
-.tabs button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tabs button.active {
-  background-color: #6cb5e9;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-
-/* Accordion */
-
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  transition: 0.4s;
-  border: solid 1px white;
-  font-size: 1rem;
-}
-
-.active,
-.accordion:hover {
-  background-color: #ccc;
-}
-
-.accordion:after {
-  content: "\002B";
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active2:after {
-  content: "\2212";
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.panel P {
-  font-size: 1rem;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-/* Info + h3, p 설정도 있음 */
-
-.tabcontent {
-  text-align: justify;
-}
-
-.tabcontent .info_box {
-  width: 95%;
+.review_container {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.tabcontent h3 {
-  color: var(--main-color);
-  margin-top: 8px;
-  margin-bottom: 0px;
-}
-
-.tabcontent p {
+  width: 85%;
   margin-top: 5px;
 }
 
-.info_box ol {
-  padding-left: 15px;
-}
-
-.info_box li {
-  font-size: 14px;
-  padding-top: 5px;
-}
-
-/* Hotel */
-.tabcontent .hotel_box {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.hotel_img img {
-  width: 100%;
-  max-width: 600px;
-  margin-top: 10px;
-}
-
-/* Policy */
-
-.tabcontent .policy_box {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.policy_box ol {
-  padding-left: 15px;
-  padding-top: 5px;
-}
-
-.policy_box li {
-  font-size: 14px;
-  padding-top: 0px;
-}
-
-/* 슬라이드 조절 */
-.swiper-container {
+.review_Wrap .review_img {
   width: 100%;
   height: 100%;
 }
-.swiper-slide {
-  text-align: left;
-  font-size: 18px;
-  background: #fff;
-  width: 80%;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-.swiper-slide:nth-child(2n) {
-  width: 80%;
-}
-.swiper-slide:nth-child(3n) {
-  width: 80%;
+
+.review_container_p h3,
+h5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-#whatsnew-section {
-  background-color: #fff;
-  min-height: 100%;
-}
-#whatsnew-section #tabs {
-  width: 100%;
-}
-.whatsnew-list {
-  position: relative;
-  overflow-x: hidden;
-}
-.whatsnew-list ul {
-  padding: 0;
-}
-
-.whatsnew-img img {
-  width: 100%;
-}
-
-/* 아래 동그라미, 전체보기 배경 */
-#background {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 35px;
-  background-color: none;
-}
-
-#tabs {
-  position: absolute;
-  bottom: 10px;
-  margin: 0 auto;
-  text-align: center;
-}
-#tabs .tab {
-  display: inline;
-}
-#tabs a {
-  background-color: none;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  display: inline-block;
-  margin: 0 3px;
-}
-#tabs a.active {
-  background-color: white;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  display: inline-block;
-  margin: 0 3px;
+.review_Wrap .review_container_p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 85%;
+  text-align: justify;
 }
 
 /* FOOTER */

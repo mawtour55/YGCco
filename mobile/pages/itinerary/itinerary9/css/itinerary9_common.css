@@ -646,6 +646,12 @@ header .container-small {
   margin-bottom: 10px;
 }
 
+.hotel_img img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 10px;
+}
+
 /* Policy */
 
 .tabcontent .policy_box {
