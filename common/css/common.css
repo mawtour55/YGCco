@@ -30,6 +30,7 @@ body {
     "Apple SD Gothic Neo", Arial, sans-serif;
   background: none;
   max-width: 1100px;
+  min-width: 1000px;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
@@ -162,11 +163,15 @@ header {
 
 header .container {
   padding: 8px;
+  display: flex;
+  justify-content: center;
 }
 
 .container-small .logo {
-  width: 190px;
-  height: 40px;
+  width: 240px;
+  height: 55px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* 헤더B: 네비게이션 메뉴 */
@@ -178,16 +183,17 @@ header .container {
   color: var(--main-color);
 }
 
-.headB {
-  display: none;
+.headB li {
+  float: left;
 }
 
 .headB a {
   display: block;
   padding: 8px;
   color: inherit;
-  font-size: 12px;
+  font-size: 17px;
   text-decoration: none;
+  margin-top: 9px;
 }
 
 .haedB img {
@@ -197,34 +203,7 @@ header .container {
 
 .headB a:hover {
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* 헤더C: 토글 버튼 */
-header .container-small {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ffffff;
-}
-
-.headC {
-  margin-right: 10px;
-  padding: 0;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.headC:hover {
-  opacity: 0.3;
-}
-
-.headC #ham {
-  width: 40px;
-  margin-top: 8px;
-  margin-bottom: 7px;
+  border-radius: 3%;
 }
 
 /* 상단 메뉴바 */
@@ -239,7 +218,7 @@ header .container-small {
 
 .header_menu_navigation ul {
   width: 100%;
-  height: 59px;
+  height: 68px; /* 59였음 */
   background-color: var(--main-color);
   overflow: hidden;
   border-top: 0px solid var(--main-color);
@@ -249,9 +228,9 @@ header .container-small {
 
 .header_menu_navigation ul li {
   float: left;
-  width: calc(25% - 1px);
+  width: calc(16.66% - 1px);
   height: 58px;
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 700;
   text-align: center;
   border-left: 1px solid var(--main-color);
@@ -264,8 +243,8 @@ header .container-small {
 }
 
 .header_menu_navigation ul li#btnTravelList img {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   margin-top: 6px;
   line-height: 35px;
   font-size: 1.4em;
@@ -288,8 +267,8 @@ header .container-small {
 
 /* 하위 메뉴 없는 첫번째 상단 메뉴 */
 .header_menu_navigation ul li img {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   margin-top: 6px;
   line-height: 35px;
   font-size: 1.4em;
@@ -346,7 +325,7 @@ header .container-small {
   font-family: "NanumSquare";
   font-size: 15px;
   font-weight: 700;
-  padding-left: 8px;
+  padding-left: 20px;
 }
 .header_menu_tree_list > li > a.on {
   color: #ffffff;
@@ -390,14 +369,15 @@ header .container-small {
   font-size: 14px;
   padding: 0 16px;
   background: #3b95e5;
+  padding-left: 30px;
 }
 
 /* TOUR INQUIRY */
 
 .TourInquiry {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  max-width: 400px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 700px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -412,6 +392,7 @@ header .container-small {
   margin-left: 20px;
   margin-right: 20px;
   width: 80%;
+  height: 60px;
   text-decoration: none;
 }
 
@@ -422,22 +403,23 @@ header .container-small {
 .TourInquiry img {
   width: 50px;
   border-radius: 15%;
-  margin-left: 20px;
+  margin-top: 5px;
+  margin-left: 50px;
 }
 
 .TourInquiry .wtpinquirybox {
   padding-top: 5px;
-  padding-left: 95px;
-  text-align: left;
+  text-align: center;
+  margin-right: 90px;
 }
 
 .TourInquiry .wtpinquiry {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: white;
 }
 
 .TourInquiry .wtpinquirysub {
-  font-size: 13px;
+  font-size: 1.3rem;
   color: white;
 }
 
@@ -458,8 +440,8 @@ header .container-small {
 
 /* 구분선1 */
 .one {
-  width: 85%;
-  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 /* WHY YGC */
@@ -484,8 +466,10 @@ header .container-small {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   line-height: 1.3;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 /* 3단바 */
@@ -505,7 +489,7 @@ header .container-small {
   margin-left: auto;
   margin-right: auto;
   margin-top: 8px;
-  width: 85%;
+  width: 330px;
   text-decoration: none;
 }
 
@@ -519,10 +503,8 @@ header .container-small {
   margin-left: 5px;
 }
 
-.point_Bar_Wrap #wtpimginquiry_img1 {
-  width: 58px;
-  margin-top: 30px;
-  margin-left: 5px;
+.point_Bar_Wrap #wtpimginquiry_img3 {
+  margin-top: 20px;
 }
 
 .point_Bar_Wrap .wtpinquirybox {
@@ -584,7 +566,7 @@ header .container-small {
   color: var(--main-color);
   font-size: 1.8rem;
   font-weight: bold;
-  padding-top: 15px;
+  padding-top: 17px;
 }
 
 /* LIST 슬라이드 내부 내용 */
@@ -596,7 +578,7 @@ header .container-small {
   display: block;
   margin: 0 0 0px 0;
   background: #fff;
-  padding-top: 15px;
+  padding-top: 0px;
   width: 100%;
 }
 .travel_list_list_relative img {
@@ -655,8 +637,8 @@ header .container-small {
   text-align: left;
   font-size: 18px;
   background: #fff;
-  padding-left: 22px;
-  width: 80%;
+  padding-left: 0px;
+  width: 28%;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -672,10 +654,10 @@ header .container-small {
   align-items: center;
 }
 .swiper-slide:nth-child(2n) {
-  width: 80%;
+  width: 28%;
 }
 .swiper-slide:nth-child(3n) {
-  width: 80%;
+  width: 28%;
 }
 
 #whatsnew-section {
@@ -695,6 +677,8 @@ header .container-small {
 
 .whatsnew-img img {
   width: 100%;
+  height: 500px;
+  min-height: 500px;
 }
 
 /* 아래 동그라미, 전체보기 배경 */
