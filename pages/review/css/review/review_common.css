@@ -29,6 +29,11 @@ body {
   font-family: "NanumSquare", "ë‚˜ëˆ”ê³ ë”•", "Nanum Gothic",
     "Apple SD Gothic Neo", Arial, sans-serif;
   background: none;
+  max-width: 1100px;
+  min-width: 600px;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 input,
 textarea,
@@ -158,11 +163,15 @@ header {
 
 header .container {
   padding: 8px;
+  display: flex;
+  justify-content: center;
 }
 
 .container-small .logo {
-  width: 190px;
-  height: 40px;
+  width: 240px;
+  height: 55px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* 헤더B: 네비게이션 메뉴 */
@@ -174,16 +183,17 @@ header .container {
   color: var(--main-color);
 }
 
-.headB {
-  display: none;
+.headB li {
+  float: left;
 }
 
 .headB a {
   display: block;
   padding: 8px;
   color: inherit;
-  font-size: 12px;
+  font-size: 17px;
   text-decoration: none;
+  margin-top: 9px;
 }
 
 .haedB img {
@@ -193,34 +203,7 @@ header .container {
 
 .headB a:hover {
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* 헤더C: 토글 버튼 */
-header .container-small {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ffffff;
-}
-
-.headC {
-  margin-right: 10px;
-  padding: 0;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.headC:hover {
-  opacity: 0.3;
-}
-
-.headC #ham {
-  width: 40px;
-  margin-top: 8px;
-  margin-bottom: 7px;
+  border-radius: 3%;
 }
 
 /* 상단 메뉴바 */
@@ -235,7 +218,7 @@ header .container-small {
 
 .header_menu_navigation ul {
   width: 100%;
-  height: 59px;
+  height: 68px; /* 59였음 */
   background-color: var(--main-color);
   overflow: hidden;
   border-top: 0px solid var(--main-color);
@@ -245,9 +228,9 @@ header .container-small {
 
 .header_menu_navigation ul li {
   float: left;
-  width: calc(25% - 1px);
+  width: calc(16.66% - 1px);
   height: 58px;
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 700;
   text-align: center;
   border-left: 1px solid var(--main-color);
@@ -260,8 +243,8 @@ header .container-small {
 }
 
 .header_menu_navigation ul li#btnTravelList img {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   margin-top: 6px;
   line-height: 35px;
   font-size: 1.4em;
@@ -284,8 +267,8 @@ header .container-small {
 
 /* 하위 메뉴 없는 첫번째 상단 메뉴 */
 .header_menu_navigation ul li img {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   margin-top: 6px;
   line-height: 35px;
   font-size: 1.4em;
@@ -342,7 +325,7 @@ header .container-small {
   font-family: "NanumSquare";
   font-size: 15px;
   font-weight: 700;
-  padding-left: 8px;
+  padding-left: 20px;
 }
 .header_menu_tree_list > li > a.on {
   color: #ffffff;
@@ -386,14 +369,15 @@ header .container-small {
   font-size: 14px;
   padding: 0 16px;
   background: #3b95e5;
+  padding-left: 30px;
 }
 
 /* TOUR INQUIRY */
 
 .TourInquiry {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  max-width: 400px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 700px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -408,6 +392,7 @@ header .container-small {
   margin-left: 20px;
   margin-right: 20px;
   width: 80%;
+  height: 60px;
   text-decoration: none;
 }
 
@@ -418,22 +403,23 @@ header .container-small {
 .TourInquiry img {
   width: 50px;
   border-radius: 15%;
-  margin-left: 20px;
+  margin-top: 5px;
+  margin-left: 50px;
 }
 
 .TourInquiry .wtpinquirybox {
   padding-top: 5px;
-  padding-left: 95px;
-  text-align: left;
+  text-align: center;
+  margin-right: 90px;
 }
 
 .TourInquiry .wtpinquiry {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: white;
 }
 
 .TourInquiry .wtpinquirysub {
-  font-size: 13px;
+  font-size: 1.3rem;
   color: white;
 }
 
@@ -462,9 +448,10 @@ header .container-small {
   margin-left: auto;
   margin-right: auto;
   width: 85%;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   margin-top: 10px;
   text-align: justify;
+  font-size: 1.3rem;
 }
 
 mark.mint {
@@ -472,20 +459,19 @@ mark.mint {
   color: white;
 }
 
-.review_box h3 {
+.review_box p {
   margin-bottom: 10px;
 }
 
-/* Tour review */
+/* Customer Testimonials */
 
 .container_h2 {
-  margin-bottom: 16px;
-  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .container_h2 h2 {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color: var(--main-color);
 }
 
@@ -504,33 +490,38 @@ mark.mint {
 /* review YGC */
 
 .review_Wrap {
-  width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .review_container {
+  display: flex;
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
   width: 85%;
 }
 
 .review_Wrap .review_img {
-  width: 100%;
-  height: 100%;
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .review_container_p h3,
 h5 {
-  margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .review_Wrap .review_container_p {
-  margin-left: auto;
+  display: inline-block;
+  margin-left: 20px;
   margin-right: auto;
-  margin-top: 15px;
-  width: 85%;
+  width: 50%;
   text-align: justify;
+  font-size: 1.2rem;
 }
 
 /* FOOTER */
