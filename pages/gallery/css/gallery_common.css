@@ -454,6 +454,10 @@ header .container {
   font-size: 1.2rem;
 }
 
+.gallery_box strong {
+  color: var(--main-color);
+}
+
 mark.mint {
   background-color: var(--main-color);
   color: white;
@@ -465,7 +469,6 @@ mark.mint {
 
 .container_h2 {
   margin-bottom: 25px;
-  margin-top: 25px;
 }
 
 .container_h2 h2 {
@@ -573,14 +576,12 @@ h5 {
 
 /* Image */
 
-* {
-}
-
 .row {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
+  margin-bottom: 20px;
 }
 
 /* Create four equal columns that sits next to each other */

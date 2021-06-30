@@ -472,6 +472,10 @@ header .container {
   font-size: 1.3rem;
 }
 
+.container_p strong {
+  color: var(--main-color);
+}
+
 /* 3단바 */
 .point_Bar_Wrap {
   padding-top: 0px;
@@ -489,7 +493,7 @@ header .container {
   margin-left: auto;
   margin-right: auto;
   margin-top: 8px;
-  width: 330px;
+  width: 340px;
   text-decoration: none;
 }
 
@@ -503,23 +507,23 @@ header .container {
   margin-left: 5px;
 }
 
-.point_Bar_Wrap #wtpimginquiry_img3 {
-  margin-top: 20px;
-}
-
 .point_Bar_Wrap .wtpinquirybox {
   padding-left: 80px;
   text-align: left;
   color: var(--main-color);
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .point_Bar_Wrap .wtpinquiry {
   font-size: 1.5rem;
+  margin-top: 0;
 }
 
 .point_Bar_Wrap .wtpinquirysub {
   font-size: 1rem;
   color: var(--main-font-color);
+  margin-top: 5px;
 }
 
 /* 구분선 */

@@ -463,6 +463,10 @@ mark.mint {
   margin-bottom: 10px;
 }
 
+.review_box strong {
+  color: var(--main-color);
+}
+
 /* Customer Testimonials */
 
 .container_h2 {

@@ -26,7 +26,7 @@ article {
 }
 body {
   font-size: 14px;
-  font-family: "NanumSquare", "ë‚˜ëˆ”ê³ ë”•", "Nanum Gothic",
+  font-family: NahumSquare, "ë‚˜ëˆ”ê³ ë”•", "Nanum Gothic",
     "Apple SD Gothic Neo", Arial, sans-serif;
   background: none;
   max-width: 1100px;
@@ -256,7 +256,7 @@ header .container {
   margin-top: 2px;
   display: block;
   color: #fff;
-  font-family: "NanumSquare";
+  font-family: NahumSquare;
   font-size: 0.9em;
   letter-spacing: -0.02em;
   opacity: 1;
@@ -279,7 +279,7 @@ header .container {
   display: block;
   color: #fff;
   background-color: var(--main-color) !important;
-  font-family: "NanumSquare";
+  font-family: NahumSquare;
   font-size: 0.9em;
   letter-spacing: -0.02em;
   opacity: 1;
@@ -322,7 +322,7 @@ header .container {
   display: block;
   line-height: 40px;
   color: #ffffff;
-  font-family: "NanumSquare";
+  font-family: NahumSquare;
   font-size: 15px;
   font-weight: 700;
   padding-left: 20px;
@@ -365,7 +365,7 @@ header .container {
   width: 100%;
   height: 39px;
   color: #ffffff;
-  font-family: "NanumSquare";
+  font-family: NahumSquare;
   font-size: 14px;
   padding: 0 16px;
   background: #3b95e5;
