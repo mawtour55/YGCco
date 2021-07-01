@@ -707,7 +707,6 @@ header .container {
 }
 
 .isFlicking {
-  display: flex;
   margin-bottom: 20px;
 }
 
@@ -721,13 +720,22 @@ header .container {
 .whatsnew-list {
   position: relative;
   overflow-x: hidden;
+  margin-top: auto;
+  margin-bottom: auto;
+  min-width: 550px;
 }
 .whatsnew-list ul {
   padding: 0;
 }
 
 .whatsnew-img img {
-  width: 550px;
+  width: 100%;
+}
+
+@media (min-width: 911px) {
+  .isFlicking {
+    display: flex;
+  }
 }
 
 /* 아래 동그라미, 전체보기 배경 */
