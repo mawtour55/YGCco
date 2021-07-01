@@ -28,17 +28,7 @@
                 <a href="../../../index.html">
                     <img class="logo" src="../../../images/Icon/Logo/logo.png" alt="">
                 </a>
-                <button type="button" class="headC">
-                    <img id="ham" src="../../../images/Icon/Ham/ham.png" alt="">
-                </button>
             </div>
-            <nav class="headB">
-                <ul>
-                    <li><a href="../../introduce/introduce_index.html">YGC Story</a></li>
-                    <li><a href="../../FAQ/FAQ_index.html">FAQ</a></li>
-                    <li><a href="../../policy/policy_index.html">Company policy</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 </div>
@@ -66,6 +56,18 @@
                 <a href="../../gallery/gallery_index.html">
                     <img src="../../../images/Icon/Gallery/gallery.png" alt="">
                     <div class="btnTravelboard_div">Gallery</div>
+                </a>
+            </li>
+            <li>
+                <a href="../../introduce/introduce_index.html">
+                    <img src="../../../images/Icon/ygc story/ygc story 50.png" alt="">
+                    <div class="btnTravelboard_div">YGC Story</div>
+                </a>
+            </li>
+            <li>
+                <a href="../../FAQ/FAQ_index.html">
+                    <img src="../../../images/Icon/Question/question-white.png" alt="">
+                    <div class="btnTravelboard_div">FAQ</div>
                 </a>
             </li>
         </ul>
@@ -97,7 +99,7 @@
             <li>
                 <a href="index.html">Seasonal Destination</a>
                 <ul>
-                    <li><a href="#">Spring</a></li>
+                    <li><a href="../../seasonal destination/spring/spring_index.html">Spring</a></li>
                     <li><a href="#">Summer</a></li>
                     <li><a href="#">Autumn</a></li>
                     <li><a href="#">Winter</a></li>
@@ -180,42 +182,37 @@
         </ul>
         <ol id="tabs"></ol>
     </div>
+
+    <!-- 주요 관광지 -->
+    <div class="attractions_wrap">
+        <div class="attractions_box">
+            <h3 class="attractions_title">Visiting City:</h3>
+            <p class="attractions_title_sub">Seoul(1 day) / Gyeonggi-do(3 days)</p>
+            <h3 class="attractions_title">Tour highlights:</h3>
+            <p class="attractions_title_sub">Nami Island / Petite France / Gyeongbok Palace / Everland / Pocheon Art Valley
+                / Herb
+                Island</p>
+            <h3 class="price_title">Price:</h3>
+            <p class="price_title_sub">2 ~ 3 person USD000/pax</p>
+            <p class="price_title_sub">4 ~ 5 person USD000/pax</p>
+            <p class="price_title_sub">6 ~ 7 person USD000/pax</p>
+            <p>*Please inquire us for more than 8 people or child price.</p>
+        </div>
+    </div>
 </section>
 
-<!-- 주요 관광지 -->
-<div class="attractions_wrap">
-    <div class="attractions_box">
-        <h3 class="attractions_title">Visiting City:</h3>
-        <p class="attractions_title_sub">Seoul(1 day) / Gyeonggi-do(3 days)</p>
-    </div>
-</div>
-<div class="attractions_wrap">
-    <div class="attractions_box">
-        <h3 class="attractions_title">Tour highlights:</h3>
-        <p class="attractions_title_sub">Nami Island / Petite France / Gyeongbok Palace / Everland / Pocheon Art Valley / Herb Island</p>
-    </div>
-</div>
-<div class="price_wrap">
-    <div class="price_box">
-        <h3 class="price_title">Price:</h3>
-        <p class="price_title_sub">2 ~ 3 person USD000/pax</p>
-        <p class="price_title_sub">4 ~ 5 person USD000/pax</p>
-        <p class="price_title_sub">6 ~ 7 person USD000/pax</p>
-        <p>*Please inquire us for more than 8 people or child price.</p>
+
+    
+    <div class="tabs_wrap">
+        <div class="tabs">
+            <div class="tebbox"><button class="tablinks" onclick="openCity(event, 'Info')" id="defaultOpen">Info</button>
+            </div>
+            <div class="tebbox"><button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button></div>
+            <div class="tebbox"><button class="tablinks" onclick="openCity(event, 'Hotel')">Hotel</button></div>
+            <div class="tebbox"><button class="tablinks" onclick="openCity(event, 'Policy')">Policy</button></div>
         </div>
-</div>
 
-
-<div class="tabs_wrap">
-    <div class="tabs">
-        <div class="tebbox"><button class="tablinks" onclick="openCity(event, 'Info')" id="defaultOpen">Info</button></div>
-        <div class="tebbox"><button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button></div>
-        <div class="tebbox"><button class="tablinks" onclick="openCity(event, 'Hotel')">Hotel</button></div>
-        <div class="tebbox"><button class="tablinks" onclick="openCity(event, 'Policy')">Policy</button></div>
-    </div>
-
-    <!-- Info -->
-
+    <!-- Info -->   
     <div id="Info" class="tabcontent">
         <div class="info_box">
             <h3>Inclusion</h3>
@@ -261,9 +258,6 @@
             
             <h3>Tipping</h3>
             <p>Tip for tour guide or driver depends on how much you were satisfied with our tour service. We do not force any compulsory tipping.</p>
-
-
-
         </div>
     </div>
 

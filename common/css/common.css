@@ -423,21 +423,6 @@ header .container {
   color: white;
 }
 
-@media (max-width: 380px) {
-  .TourInquiry img {
-    margin-left: 18px;
-  }
-  .TourInquiry .wtpinquirybox {
-    padding-left: 85px;
-  }
-  .TourInquiry .wtpinquiry {
-    margin-top: 4px;
-  }
-  .TourInquiry .wtpinquirysub {
-    font-size: 10px;
-  }
-}
-
 /* 구분선1 */
 .one {
   width: 100%;
@@ -493,7 +478,7 @@ header .container {
   margin-left: auto;
   margin-right: auto;
   margin-top: 8px;
-  width: 340px;
+  width: 350px;
   text-decoration: none;
 }
 
@@ -503,8 +488,23 @@ header .container {
 
 .point_Bar_Wrap img {
   width: 50px;
-  margin-top: 30px;
   margin-left: 5px;
+}
+
+#wtpimginquiry_img1 {
+  margin-top: 33px;
+}
+
+#wtpimginquiry_img2 {
+  margin-top: 10px;
+}
+
+#wtpimginquiry_img3 {
+  margin-top: 20px;
+}
+
+#wtpimginquiry_img4 {
+  margin-top: 15px;
 }
 
 .point_Bar_Wrap .wtpinquirybox {
@@ -524,6 +524,24 @@ header .container {
   font-size: 1rem;
   color: var(--main-font-color);
   margin-top: 5px;
+}
+
+@media (min-width: 1048px) {
+  .point_Bar_Wrap .container {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1048px) {
+  #wtpimginquiry_img1 {
+    margin-top: 8px;
+  }
+  #wtpimginquiry_img2 {
+    margin-top: 8px;
+  }
+  #wtpimginquiry_img3 {
+    margin-top: 0px;
+  }
 }
 
 /* 구분선 */
